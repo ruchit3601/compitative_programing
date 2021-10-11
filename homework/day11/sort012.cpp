@@ -37,21 +37,25 @@ void rearrange(int arr[], int n)
     }
     for (int j = 0; j < n; j++)
     {
-
         cout << arr[j] << " ";
     }
     cout << "\n";
 }
 
-int main()
+void printarr(int arr[], int n)
 {
-
-    int arr[] = {0, 2, 2, 1, 2};
-    int n = 5;
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";
     }
+}
+
+int main()
+{
+
+    int arr[] = {0, 2, 2, 1, 0, 1, 2};
+    int n = 7;
+    printarr(arr, n);
     cout << "\n";
     rearrange(arr, n);
     return 0;
