@@ -1,17 +1,14 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 void min(int arr[], int n)
 {
-    int min = arr[0];
-    for (int i = 1; i < n; i++)
+    int mini = INT_MAX;
+    for (int i = 0; i < n; i++)
     {
-        if (min > arr[i])
-        {
-            min = arr[i];
-        }
+        mini=min(mini, arr[i]);
     }
-    cout <<"min is:" <<min<<" ";
+    cout << "min is:" << mini << " ";
     cout << "\n";
 }
 void max(int arr[], int n)
@@ -24,7 +21,7 @@ void max(int arr[], int n)
             max = arr[i];
         }
     }
-    cout <<"max is:"<< max<<" ";
+    cout << "max is:" << max << " ";
     cout << "\n";
 }
 
