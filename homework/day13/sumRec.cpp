@@ -4,21 +4,26 @@ using namespace std;
 int sumRec(int arr[], int n)
 {
 
-    if (n<=0)
+    if (n < 0)
     {
         return 0;
     }
 
-    return sumRec(arr, n-1)+arr[n-1];
+    return sumRec(arr, n - 1) + arr[n];
 }
 
 int main()
 {
 
-    int arr[] = {1, 2, 3, 4};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int n;
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
 
-    cout<<sumRec(arr, n);
+    cout << sumRec(arr, n - 1);
 
     return 0;
 }

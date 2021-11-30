@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int rearrange(int arr[], int n)
+void rearrange(int arr[], int n)
 {
     int temp[n];
     int j = 0;
@@ -24,7 +24,6 @@ int rearrange(int arr[], int n)
     for (int i = 0; i < n; i++)
     {
         arr[i] = temp[i];
-        j++;
     }
 }
 
